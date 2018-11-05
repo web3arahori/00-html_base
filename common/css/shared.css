@@ -1,0 +1,130 @@
+*[class*="ov"] {
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.ov50:hover {
+  opacity: 0.25;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=25); }
+
+.ov50:hover {
+  opacity: 0.50;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=50); }
+
+.ov75:hover {
+  opacity: 0.75;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=75); }
+
+.oi25:hover img {
+  opacity: 0.25;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=25); }
+
+.oi50:hover img {
+  opacity: 0.50;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=50); }
+
+.oi75:hover img {
+  opacity: 0.75;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Enabled=1,Style=0,Opacity=75); }
+
+.oi {
+  display: block; }
+
+.oi img {
+  background-color: transparent; }
+
+.oi:hover {
+  background-color: transparent; }
+
+.oi:hover img {
+  visibility: hidden; }
+
+.f_bold {
+  font-weight: bold; }
+
+.link_1 {
+  padding-left: 15px;
+  background: url(../image/icon/icon_link.gif) no-repeat left center; }
+
+.navi ul,
+.navi ul li {
+  padding: 0;
+  margin: 0; }
+
+.navi ul {
+  list-style: none; }
+
+.navi li {
+  float: left; }
+
+.navi li a {
+  display: block; }
+
+.navi li a img {
+  background-color: transparent; }
+
+.navi li a:hover {
+  background-color: transparent; }
+
+.navi li a:hover img {
+  visibility: hidden; }
+
+#base .pos_al {
+  text-align: left; }
+
+#base .pos_ac {
+  text-align: center; }
+
+#base .pos_ar {
+  text-align: right; }
+
+#base .pos_vt {
+  vertical-align: top; }
+
+#base .pos_vm {
+  vertical-align: middle; }
+
+#base .pos_vb {
+  vertical-align: bottom; }
+
+#base .fl_left {
+  float: left; }
+
+#base .fl_right {
+  float: right; }
+
+#base .fl_left .fl_image {
+  margin: 0 15px 5px 0; }
+
+#base .fl_right .fl_image {
+  margin: 0 0 5px 15px; }
+
+* html .fl_left,
+* html .fl_right {
+  display: inline; }
+
+.list_pager {
+  margin-bottom: 20px; }
+
+.list_pager ul {
+  text-align: center; }
+
+.list_pager ul li {
+  display: inline; }
+
+.list_pager ul li strong {
+  display: -moz-inline-box;
+  display: inline-block;
+  padding: 2px 7px 4px;
+  background: #EEE;
+  border: 1px #CCC solid; }
+
+.list_pager ul li a {
+  display: -moz-inline-box;
+  display: inline-block;
+  padding: 2px 7px 4px;
+  border: 1px #CCC solid; }
+
+.list_pager ul li a:hover {
+  background: #406E6E;
+  color: #FFF;
+  border: 1px solid #406E6E; }

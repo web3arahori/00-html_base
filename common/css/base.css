@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*
+* Webcreative by Arahori
+* Last Update:2017/09/1
+* https://web3.co.jp/
+*/
+
+/*===================================================================
+	Base Format
+===================================================================*/
+/*IE用viewport*/
+@-ms-viewport {
+width: auto;
+initial-scale: 1;
+}
+/*Noto Sans JP*/
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 100;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Thin.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Thin.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Thin.otf')  format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 200;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Light.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Light.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Light.otf')  format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-DemiLight.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-DemiLight.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-DemiLight.otf')  format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Regular.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Regular.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Regular.otf')  format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Medium.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Medium.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Medium.otf')  format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Bold.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Bold.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Bold.otf')  format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NotoSansjp';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../font/NotoSansCJKjp/NotoSansCJKjp-Black.woff') format('woff'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Black.woff2') format('woff2'),
+	url('../font/NotoSansCJKjp/NotoSansCJKjp-Black.otf')  format('truetype');
+	font-display: swap;
+}
+
+/* OS游ゴシックweightズレ防止 */
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+  font-weight: bold;
+  font-display: swap;
+}
+/* はんなり明朝 */
+.hannari { font-family:"Hannari",sans-serif; font-weight: bold; line-height:1;}
+@font-face {
+font-family:"Hannari";
+src: url('../font/hannari.otf');
+src: url('../font/hannari.ttf');
+src: url('../font/hannari.woff');
+font-display: swap;
+}
+
+/* 各要素reset */
+html { font-size: 10px; box-sizing:border-box; scroll-behavior: smooth;}
+*,*::before,*::after { box-sizing: inherit; scroll-behavior:inherit;}
+html,body,p,h1,h2,h3,h4,h5,h6,table,th,td,ul,ol,li,dl,dt,dd,img,a { margin:0; padding:0; line-height: 1.7; }
+:focus { outline: none; }
+html { background:#FFF; }
+table { border-collapse:collapse; }
+td,th { line-height:1.5; vertical-align:top; text-align:left; }
+strong { font-weight:bold; }
+img { border:none; vertical-align:bottom; max-width: 100%; height:auto; }
+img[src*=".svg"] { width:100%;}
+embed,iframe,object { max-width: 100%;}
+br { line-height: 0; }
+hr { display:none; }
+fieldset { border:none; }
+blockquote { padding:0; border:none; }
+address { font-style:normal; }
+button { cursor: pointer;}
+ul { list-style:none; }
+em { font-style: normal; font-weight: bold; }
+
+/*基本設定*/
+h1,h2,h3,h4,h5,h6,table,th,td,input,textarea { font-size: 100%; font-weight:normal; }
+body {
+font:1.6rem/1.7  'NotoSansjp', 'Noto Sans CJK JP' , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+font-style:normal;
+font-weight:normal;
+font-weight: 300;/* DemiLight */
+color:#222;
+word-break: break-word;
+}
+
+/* リンク */
+a {}
+a:link { text-decoration:underline; }
+a:visited { text-decoration:underline; }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none; }
+
+/*===================================================================
+	Common Class
+===================================================================*/
+/* 中央寄せ */
+body { text-align:center; }
+.center-lg { max-width:1200px; width:100%; margin:0 auto; text-align:left; }
+.center-md { max-width:980px; width:100%; margin:0 auto; text-align:left; }
+.center-sm { max-width:768px; width:100%; margin:0 auto; text-align:left; }
+.center-xs { max-width:480px; width:100%; margin:0 auto; text-align:left; }
+
+/*フォント指定*/
+.yu-gothic { font-family: "Yu Gothic", YuGothic, sans-serif ; }
+.yu-mincho { font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", sans-serif;}
+.meiryo { font-family: "メイリオ", Meiryo, sans-serif;}
+.notosans { font-family:'NotoSansjp','Noto Sans CJK JP',sans-serif;}
+
+/*アンカー装飾*/
+.as-line,#base .as-line {text-decoration: none;}
+.as-line:hover,#base .as-line:hover { text-decoration: underline;}
+.as-none,#base .as-none {text-decoration: underline;}
+.as-none:hover,#base .as-none:hover { text-decoration: none;}
+
+/* 文字の大きさ指定*/
+.xxx-large ,#base .xxx-large { font-size:2.7em;}
+.xx-large  ,#base .xx-large  { font-size:1.75em;}
+.x-large   ,#base .x-large   { font-size:1.5em;}
+.large     ,#base .large     { font-size:1.3em;}
+.s-large   ,#base .s-large   { font-size: 1.15em;}
+.mid       ,#base .mid       { font-size:1em;}
+.small     ,#base .small     { font-size:0.92em;}
+.x-small   ,#base .x-small   { font-size:0.87em;}
+
+/*文字装飾*/
+.f-normal ,#base .f-normal { font-weight:normal;}
+.f-bold ,#base .f-bold { font-weight:bold;}
+.f-100 , #base .f-100 { font-weight: 100 }
+.f-200 , #base .f-200 { font-weight: 200 }
+.f-300 , #base .f-300 { font-weight: 300 }
+.f-400 , #base .f-400 { font-weight: 400 }
+.f-500 , #base .f-500 { font-weight: 500 }
+.f-600 , #base .f-600 { font-weight: 600 }
+.f-700 , #base .f-700 { font-weight: 700 }
+.f-800 , #base .f-800 { font-weight: 800 }
+.f-900 , #base .f-900 { font-weight: 900 }
+.f-italic ,#base .f-italic { font-style:italic;}
+.f-small ,#base .f-small { font-size: 80%; }
+.f-large ,#base .f-large { font-size: 120%; }
+
+/* 文字の色指定*/
+.c-red    ,#base .c-red    { color:red; }
+.c-purple ,#base .c-purple { color:purple; }
+.c-blue   ,#base .c-blue   { color:blue; }
+.c-green  ,#base .c-green  { color:green; }
+.c-yellow ,#base .c-yellow { color:yellow; }
+.c-orange ,#base .c-orange { color:orange; }
+.c-fff ,#base .c-fff { color: #fff; }
+.c-000 ,#base .c-000 { color: #000; }
+
+/*アピアランス解除*/
+.ap-none ,#base .ap-none {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+.before-none::before ,#base .before-none::before { display:none;}
+.after-none::after ,#base .after-none::after { display:none;}
+.bt-none ,#base .bt-none { border-top:none;}
+.br-none ,#base .br-none { border-right:none;}
+.bb-none ,#base .bb-none { border-bottom:none;}
+.br-none ,#base .br-none { border-left:none;}
+
+/*clearfix*/
+.clearfix{ *zoom:1;}
+.clearfix:after { content:" "; display: table; clear:both;}

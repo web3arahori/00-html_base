@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+* Webcreative by Kawasaki
+* Last Update:2017/10/1
+* https://web3.co.jp/
+*/
+/*===================================================================
+	import
+===================================================================*/
+/*CSSフレームワーク*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url("bootstrap-grid.css");
+@import url("font-awesome.css");
+
+/*基本設定*/
+/*@import url("base.css");
+@import url("property.css");
+@import url("layout.css");
+@import url("shared.css");
+@import url("entry.css");
+@import url("style.css");*/
