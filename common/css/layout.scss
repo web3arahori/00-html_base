@@ -11,8 +11,8 @@
 //	base
 //===================================================================
 @at-root #base {}
-@media #{$xs}{}
 @media #{$sm}, #{$md}, #{$lg}{}
+@media #{$xs}{}
 @at-root #base { @media #{$pc}{ min-width: 1200px; } }
 
 	
@@ -25,7 +25,7 @@
 	&site_logo { position:absolute; left:21px; top:26px; text-indent:-9999px; }
 	&site_logo a { display:block; width:170px; height:62px; background:url(../image/head/site_logo.jpg) no-repeat left top; }
 	
-	@media #{$xs}{
+	@media #{$sp}{
 		
 	position:relative; z-index:100; height:50px; background:#FFF; 
 	
@@ -40,7 +40,7 @@
 	//-------------------------------------------------------------------
 	//	main_navi
 	//-------------------------------------------------------------------
-	@media #{$sm}, #{$md}, #{$lg}{
+	@media #{$pc}{
 
 	&main_navi { display:block !important; float:right;
 		ul { display:table;
@@ -56,7 +56,7 @@
 	}
 	}
 	
-	@media #{$xs}{
+	@media #{$sp}{
 	
 	&main_navi { display:none; position:absolute; top:50px; left:0; width:100%; background:#282828;
 		> ul { width:100%;

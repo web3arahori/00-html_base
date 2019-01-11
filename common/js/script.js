@@ -283,3 +283,8 @@ $(function(){
 	$('body').addClass(os).addClass(browser).addClass(ver);
 	if(ie) $('body').addClass(ie);
 });
+
+if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+    }else{
+        document.write('<meta name="viewport" content="width=1200, viewport-fit=cover">');
+    }

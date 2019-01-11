@@ -11,7 +11,7 @@
   width: 170px;
   height: 62px;
   background: url(../image/head/site_logo.jpg) no-repeat left top; }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .layout-- {
     position: relative;
     z-index: 100;
@@ -38,7 +38,7 @@
       height: 100%;
       width: 100%;
       background: rgba(0, 0, 0, 0.6); } }
-@media (min-width: 576px) and (max-width: 767.98px), (min-width: 768px) and (max-width: 991.98px), (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 768px) {
   .layout--main_navi {
     display: block !important;
     float: right; }
@@ -62,7 +62,7 @@
           display: none; }
         .layout--main_navi ul li ul {
           display: none; } }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .layout--main_navi {
     display: none;
     position: absolute;
